@@ -1,0 +1,52 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$dark-color: #343a40;
+$light-color: #f8f9fa;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: $primary-color;
+    color: $light-color;
+}
+
+.card {
+    margin-bottom: 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 0.25rem;
+}
+
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid $dark-color;
+    border-radius: 50%;
+}
+
+img[alt] {
+    border: 2px solid $secondary-color;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}

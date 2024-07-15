@@ -1,0 +1,75 @@
+body {
+  font-family: "Helvetica, sans-serif";
+  line-height: 1.6;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: 1px solid #007bff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.card .card-title {
+  font-weight: bold;
+}
+.card .card-text {
+  color: #6c757d;
+}
+
+footer {
+  background-color: #0062cc;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0056b3;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0056b3;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  border: 1px solid #007bff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #0062cc;
+}
+/*# sourceMappingURL=styles.css.map */
