@@ -1,0 +1,19 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 20px 0;
+    @include flex-center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px 0;
+}

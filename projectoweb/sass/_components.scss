@@ -1,0 +1,61 @@
+
+nav {
+    background-color: $primary-color;
+    height: $nav-height;
+    @include flex-center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: $border-radius;
+                @include transition(all, $transition-duration, ease-in-out);
+                @include hover-effect($accent-color);
+
+                &:hover {
+                    background-color: lighten($primary-color, 10%);
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+button {
+    background-color: $primary-color;
+    color: $white-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    @include transition(all, $transition-duration, ease-in-out);
+    @include box-shadow($primary-color);
+
+    &:hover {
+        background-color: $accent-color;
+        transform: scale(1.05);
+    }
+}
+
+.card {
+    background-color: $secondary-color;
+    color: $white-color;
+    padding: 20px;
+    border-radius: $border-radius;
+    @include box-shadow($primary-color);
+    @include transition(all, $transition-duration, ease-in-out);
+
+    &:hover {
+        background-color: lighten($secondary-color, 5%);
+        transform: scale(1.02);
+    }
+}
